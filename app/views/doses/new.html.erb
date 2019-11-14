@@ -1,0 +1,5 @@
+<%= simple_form_for [@cocktail, @dose] do |dose| %>
+    <%= dose.label :description %>
+    <%= dose.text_field :description %>
+    <%= dose.button :submit %>
+<% end %>
