@@ -4,6 +4,10 @@
   <h1>Miss Cocktail</h1>
 </div>
 
+<div class="navbar">
+  <p><%= link_to 'Add a new cocktail', new_cocktail_path %></p>
+</div>
+
 <div class="container">
   <div class="cards">
   <% @cocktails.each do |cocktail| %>
@@ -14,4 +18,4 @@
 </div>
 </div>
 
-<%= link_to 'Add a new cocktail', new_cocktail_path %>
+
