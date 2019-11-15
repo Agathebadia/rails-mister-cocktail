@@ -7,8 +7,7 @@
 <div class="container">
   <div class="cards">
   <% @cocktails.each do |cocktail| %>
-  <div class="card-category"><%= cl_image_tag("i3tbijnsv13n1nssc5ot",
-      width: 400, height: 300, crop: :fill) %>
+  <div class="card-category">
    <p id="cocktail-name"><%= link_to cocktail.name, cocktail_path(cocktail.id) %></p>
   </div>
   <% end %>
