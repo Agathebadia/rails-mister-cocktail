@@ -1,11 +1,17 @@
-<h1>Mister Cocktail</h1>
 
-<ul>
+
+<div class="banner">
+  <h1>Miss Cocktail</h1>
+</div>
+
+<div class="container">
+  <div class="cards">
   <% @cocktails.each do |cocktail| %>
-  <li>
-    <%= link_to cocktail.name, cocktail_path(cocktail.id) %>
+  <div class="card-category" style="background-image: url()">
+   <p id="cocktail-name"><%= link_to cocktail.name, cocktail_path(cocktail.id) %></p>
+  </div>
   <% end %>
-  </li>
-</ul>
+</div>
+</div>
 
 <%= link_to 'Add a new cocktail', new_cocktail_path %>

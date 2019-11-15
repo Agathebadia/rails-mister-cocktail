@@ -1,0 +1,13 @@
+.banner {
+  background-image: asset-url('banner.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  background: transparent;
+  font-size: 45px;
+}

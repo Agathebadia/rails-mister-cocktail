@@ -11,9 +11,9 @@ class DosesController < ApplicationController
     @dose = Dose.new(dose_params)
     @dose.cocktail = @cocktail
     if @dose.save
-    redirect_to @cocktail
-  else
-    render :new
+      redirect_to @cocktail
+    else
+      render :new
     end
   end
 

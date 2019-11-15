@@ -1,5 +1,10 @@
 <%= simple_form_for [@cocktail, @dose] do |dose| %>
     <%= dose.label :description %>
     <%= dose.text_field :description %>
+    <%= dose.input :ingredient_id, collection: Ingredient.all, required: false, include_blank: false %>
     <%= dose.button :submit %>
+<% end %>
+
+<% if @dose.errors.any? %>
+  <%= @dose.errors.full_messages.join(", ") %>
 <% end %>

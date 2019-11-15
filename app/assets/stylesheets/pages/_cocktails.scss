@@ -1,0 +1,14 @@
+$light-pink: #FFFAF5;
+
+* {
+  background-color: $light-pink;
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #f8caa9;
+}
